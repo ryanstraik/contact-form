@@ -2,390 +2,235 @@
 <html lang="fr">
   <head>
     <meta charset="UTF-8">
-    <title>Contact</title>
+    <title>Contact Widget Page</title>
     <style>
-      * {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      }
-
+      /* Optional: Keep body centered if you want to test the blank state */
       body {
         background-color: #f5f5f7;
         display: flex;
-        align-items: flex-start;
-        justify-content: center;
-        padding: 40px 16px;
-      }
-
-      .form-wrapper {
-        background-color: #ffffff;
-        max-width: 420px;
-        width: 100%;
-        border-radius: 8px;
-        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
-        padding: 24px 28px 28px;
-      }
-
-      form {
-        width: 100%;
-      }
-
-      .field {
-        margin-bottom: 18px;
-      }
-
-      label {
-        display: block;
-        font-size: 13px;
-        color: #555555;
-        margin-bottom: 6px;
-      }
-
-      input[type="text"],
-      input[type="email"],
-      textarea,
-      select {
-        width: 100%;
-        padding: 10px 12px;
-        border: 1px solid #dddddd;
-        border-radius: 6px;
-        font-size: 15px;
-        color: #333333;
-        transition: border-color 0.2s;
-      }
-
-      input[type="file"] {
-        display: none;
-      }
-
-      input:focus,
-      textarea:focus,
-      select:focus {
-        border-color: #ff7a00;
-        outline: none;
-        box-shadow: 0 0 0 1px #ff7a00;
-      }
-
-      textarea {
-        resize: vertical;
-        min-height: 100px;
-      }
-
-      /* UPDATED BUTTON COLOR */
-      .button {
-        display: block;
-        width: 100%;
-        padding: 12px;
-        background-color: #ff7a00; /* Orange Color */
-        color: white;
-        border: none;
-        border-radius: 6px;
-        font-size: 16px;
-        font-weight: bold;
-        cursor: pointer;
-        transition: background-color 0.2s, box-shadow 0.2s;
-      }
-
-      .button:hover {
-        background-color: #e06b00; /* Darker orange for hover */
-      }
-
-      .button:disabled {
-        background-color: #ffcc99;
-        cursor: not-allowed;
-      }
-
-      /* Attachments Styling */
-      .attachments-upload-area {
-        border: 1px dashed #cccccc;
-        border-radius: 6px;
-        padding: 15px;
-        text-align: center;
-        cursor: pointer;
-        margin-bottom: 10px;
-        background-color: #f9f9f9;
-        transition: background-color 0.2s;
-      }
-
-      .attachments-upload-area:hover {
-        background-color: #eeeeee;
-      }
-
-      .attachments-preview {
-        list-style: none;
-        padding: 0;
-      }
-
-      .attachments-preview li {
-        display: flex;
-        justify-content: space-between;
         align-items: center;
-        padding: 8px 0;
-        border-bottom: 1px solid #eeeeee;
-        font-size: 14px;
-        color: #444444;
+        justify-content: center;
+        min-height: 100vh;
+        margin: 0;
       }
-
-      .attachments-preview li:last-child {
-        border-bottom: none;
-      }
-
-      .attachments-remove {
-        background: none;
-        border: none;
-        color: #e74c3c;
-        cursor: pointer;
-        font-weight: bold;
-        padding: 4px;
-        margin-left: 10px;
-        font-size: 16px;
-        line-height: 1;
-      }
-
-      .message-box {
-        padding: 15px;
-        border-radius: 6px;
-        font-size: 15px;
-        margin-bottom: 15px;
-        display: none;
-      }
-
-      .message-box.success {
-        background-color: #e8f9e8;
-        color: #27ae60;
-        border: 1px solid #27ae60;
-      }
-
-      .message-box.error {
-        background-color: #fcebeb;
-        color: #c0392b;
-        border: 1px solid #c0392b;
+      
+      /* Optional: A message to confirm the page is working if the widget takes a moment to load */
+      h1 {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        color: #555555;
+        font-size: 24px;
       }
     </style>
   </head>
   <body>
-    <div class="form-wrapper">
-      <!-- Message Box for Success/Error -->
-      <div id="message-status" class="message-box"></div>
-
-      <form id="contact-form">
-        <h2 style="font-size: 20px; color: #333333; margin-bottom: 20px;">Contactez-nous</h2>
-
-        <div class="field">
-          <label for="name">Nom / Prénom</label>
-          <input type="text" id="name" name="name" required />
-        </div>
-
-        <div class="field">
-          <label for="email">Adresse Email</label>
-          <input type="email" id="email" name="email" required />
-        </div>
-
-        <div class="field">
-          <label for="subject">Sujet</label>
-          <input type="text" id="subject" name="subject" required />
-        </div>
-
-        <div class="field">
-          <label for="message">Message</label>
-          <textarea id="message" name="message" required></textarea>
-        </div>
-
-        <div class="field">
-          <label>Pièces Jointes (Max 5MB par fichier)</label>
-          <div class="attachments-upload-area">
-            Cliquez pour ajouter des fichiers
-          </div>
-          <input
-            type="file"
-            id="attachments"
-            name="attachments"
-            multiple
-            accept=".pdf,.jpg,.jpeg,.png"
-          />
-          <ul class="attachments-preview" id="attachments-preview"></ul>
-        </div>
-
-        <button type="submit" class="button" id="submit-button">Envoyer la demande</button>
-      </form>
-    </div>
+    <h1>Redirecting to Support...</h1>
+    
+    <script>
+      window.fwSettings={
+        'widget_id':205000000615
+      };
+      !function(){if("function"!=typeof window.FreshworksWidget){var n=function(){n.q.push(arguments)};n.q=[],window.FreshworksWidget=n}}() 
+    </script>
+    <script type='text/javascript' src='https://euc-widget.freshworks.com/widgets/205000000615.js' async defer></script>
 
     <script>
-      (function () {
-        // ============================================================
-        //  ✅ CONFIGURATION MISE À JOUR (Vos informations) ✅
-        // ============================================================
-        
-        // 1. Enter your Freshworks Domain
-        const FRESHWORKS_DOMAIN = 'straik.freshdesk.com'; 
-        
-        // 2. Enter your API Key 
-        const FRESHWORKS_API_KEY = 'v4lxNEcBzVvi-5bWrnQ_'; 
+      (function(){
+        const hideHeading = () => {
+          const h = document.querySelector('h1');
+          if (h) h.style.display = 'none';
+        };
 
-        // ============================================================
+        const selectors = [
+          'iframe[src*="freshworks"]',
+          'iframe[src*="euc-widget"]',
+          'div[id^="fw-"]',
+          'div[id*="freshworks"]',
+          'div[class*="freshworks"]',
+          'div[class*="fw-"]',
+          '.freshworks-messenger',
+          '.fw-widget',
+          '[id^="fw-embed"]'
+        ];
 
-        const FRESHWORKS_ENDPOINT = `https://${FRESHWORKS_DOMAIN}/api/v2/tickets`;
+        const findWidgetElement = () => {
+          for (let sel of selectors) {
+            const el = document.querySelector(sel);
+            if (el) return el;
+          }
+          return null;
+        };
 
-        const form = document.getElementById("contact-form");
-        const submitButton = document.getElementById("submit-button");
-        const statusMessage = document.getElementById("message-status");
-        
-        // Helper function to display messages
-        function showMessage(type, message) {
-            statusMessage.textContent = message;
-            statusMessage.className = `message-box ${type}`;
-            statusMessage.style.display = 'block';
-        }
-        
-        // Helper function to hide messages
-        function hideMessage() {
-            statusMessage.style.display = 'none';
-        }
+        const originalStyles = new WeakMap();
 
-        // --- File Attachment Logic ---
-        const input = document.getElementById("attachments");
-        const preview = document.getElementById("attachments-preview");
-        const uploadArea = document.querySelector(".attachments-upload-area");
-        const MAX_SIZE = 5 * 1024 * 1024; // 5MB
+        const createOverlay = () => {
+          let ov = document.getElementById('fw-center-overlay');
+          if (ov) return ov;
+          ov = document.createElement('div');
+          ov.id = 'fw-center-overlay';
+          Object.assign(ov.style, {
+            position: 'fixed',
+            inset: '0',
+            background: 'rgba(0,0,0,0.45)',
+            zIndex: '999998',
+            transition: 'opacity 200ms ease',
+            opacity: '0'
+          });
+          document.body.appendChild(ov);
+          // fade in
+          requestAnimationFrame(() => ov.style.opacity = '1');
+          return ov;
+        };
 
-        let selectedFiles = [];
+        const restoreElement = (el) => {
+          if (!el) return;
+          const orig = originalStyles.get(el) || {};
+          for (let k in orig) el.style[k] = orig[k];
+          originalStyles.delete(el);
+        };
 
-        uploadArea.addEventListener("click", function () {
-          input.click();
-        });
+        const centerAndZoom = (el, scale = 1.2, duration = 350) => {
+          if (!el) return false;
+          try {
+            // Save original inline styles so we can restore
+            if (!originalStyles.has(el)) {
+              const snapshot = {};
+              ['position','left','top','bottom','right','transform','transformOrigin','transition','zIndex','width','height','maxWidth','maxHeight','boxShadow'].forEach(k => snapshot[k] = el.style[k] || '');
+              originalStyles.set(el, snapshot);
+            }
 
-        function renderPreview() {
-          preview.innerHTML = "";
-          if (selectedFiles.length === 0) {
-            uploadArea.innerHTML = "Cliquez pour ajouter des fichiers";
+            // Make parent overflow visible to avoid clipping
+            let p = el.parentElement;
+            while (p && p !== document.body) {
+              if (getComputedStyle(p).overflow === 'hidden') p.style.overflow = 'visible';
+              p = p.parentElement;
+            }
+
+            const isIframe = el.tagName && el.tagName.toLowerCase() === 'iframe';
+
+            // Apply centered fixed positioning
+            Object.assign(el.style, {
+              position: 'fixed',
+              left: '50%',
+              top: '50%',
+              transformOrigin: 'center center',
+              transition: `transform ${duration}ms ease, box-shadow ${duration}ms ease`,
+              zIndex: '999999'
+            });
+
+            // Constrain size for nicer centered display
+            if (!el.style.width) el.style.width = isIframe ? '420px' : 'min(420px, 90vw)';
+            if (!el.style.maxHeight) el.style.maxHeight = '90vh';
+            if (!el.style.height && isIframe) el.style.height = '600px';
+
+            // Add subtle shadow
+            el.style.boxShadow = '0 20px 40px rgba(0,0,0,0.25)';
+
+            // Use translate + scale to center and zoom
+            el.style.transform = `translate(-50%, -50%) scale(${scale})`;
+
+            return true;
+          } catch (e) {
+            return false;
+          }
+        };
+
+        const observeAndZoom = (scale = 1.2, duration = 350, timeout = 7000) => {
+          const el = findWidgetElement();
+          if (el && centerAndZoom(el, scale, duration)) {
+            const ov = createOverlay();
+            const close = () => {
+              if (typeof FreshworksWidget === 'function') try { FreshworksWidget('close'); } catch(e){}
+              restoreElement(el);
+              if (ov && ov.parentElement) ov.parentElement.removeChild(ov);
+              document.removeEventListener('keydown', onKey);
+            };
+
+            const onKey = (ev) => { if (ev.key === 'Escape') close(); };
+            ov.addEventListener('click', close, { once: true });
+            document.addEventListener('keydown', onKey);
             return;
           }
-          
-          uploadArea.innerHTML = `${selectedFiles.length} fichier(s) sélectionné(s). Cliquez pour modifier.`;
 
-          selectedFiles.forEach(function (file, index) {
-            const li = document.createElement("li");
-            li.innerHTML = `
-              <span>${file.name} (${(file.size / 1024 / 1024).toFixed(2)} MB)</span>
-              <button type="button" class="attachments-remove" data-index="${index}">×</button>
-            `;
-            preview.appendChild(li);
-          });
-        }
-
-        function syncInputFiles() {
-          const dataTransfer = new DataTransfer();
-          selectedFiles.forEach(function (file) {
-            dataTransfer.items.add(file);
-          });
-          input.files = dataTransfer.files;
-        }
-
-        preview.addEventListener("click", function (event) {
-          const target = event.target;
-          if (!(target instanceof HTMLElement)) return;
-          if (!target.classList.contains("attachments-remove")) return;
-
-          const indexAttr = target.getAttribute("data-index");
-          if (indexAttr == null) return;
-          const index = Number(indexAttr);
-          if (Number.isNaN(index)) return;
-
-          selectedFiles.splice(index, 1);
-          syncInputFiles();
-          renderPreview();
-        });
-
-        input.addEventListener("change", function () {
-          const files = Array.from(input.files || []);
-          const nextSelected = [];
-
-          files.forEach(function (file) {
-            if (file.size > MAX_SIZE) {
-              showMessage('error', file.name + " dépasse la taille maximale de 5MB.");
-            } else {
-              nextSelected.push(file);
+          const obs = new MutationObserver(() => {
+            const found = findWidgetElement();
+            if (found) {
+              centerAndZoom(found, scale, duration);
+              const ov = createOverlay();
+              const close = () => {
+                if (typeof FreshworksWidget === 'function') try { FreshworksWidget('close'); } catch(e){}
+                restoreElement(found);
+                if (ov && ov.parentElement) ov.parentElement.removeChild(ov);
+                document.removeEventListener('keydown', onKey);
+              };
+              const onKey = (ev) => { if (ev.key === 'Escape') close(); };
+              ov.addEventListener('click', close, { once: true });
+              document.addEventListener('keydown', onKey);
+              obs.disconnect();
             }
           });
 
-          selectedFiles = nextSelected;
-          syncInputFiles();
-          renderPreview();
-        });
+          obs.observe(document.body, { childList: true, subtree: true });
+          setTimeout(() => obs.disconnect(), timeout);
+        };
 
-        renderPreview(); 
-
-        // --- FRESHWORKS SUBMISSION LOGIC ---
-        form.addEventListener('submit', async function(event) {
-            event.preventDefault(); 
-            hideMessage(); 
-            
-            submitButton.disabled = true;
-            submitButton.textContent = 'Envoi en cours...';
-
-            const formData = new FormData(form);
-            
-            // 1. Prepare JSON Data
-            const ticketData = {
-                name: formData.get('name'),
-                email: formData.get('email'),
-                subject: formData.get('subject'),
-                description: formData.get('message'),
-                priority: 1, 
-                status: 2 
-            };
-            
-            // 2. Create Multipart Data
-            const finalFormData = new FormData();
-            finalFormData.append('helpdesk_ticket', JSON.stringify(ticketData));
-            
-            const files = input.files;
-            for (let i = 0; i < files.length; i++) {
-                finalFormData.append('attachments[]', files[i]);
+        const openWidgetSafely = () => {
+          try {
+            if (typeof FreshworksWidget === 'function') {
+              FreshworksWidget('open');
             }
+          } catch (e) {}
+        };
 
+        const setup = () => {
+          hideHeading();
+
+          // If FreshworksWidget is available, register listener; otherwise poll for it
+          if (typeof FreshworksWidget === 'function') {
             try {
-                // Basic Auth encoding using the API key
-                const authString = btoa(FRESHWORKS_API_KEY + ':X');
-
-                const response = await fetch(FRESHWORKS_ENDPOINT, {
-                    method: 'POST',
-                    headers: {
-                        'Authorization': `Basic ${authString}`
-                    },
-                    body: finalFormData
-                });
-
-                if (response.ok) {
-                    showMessage('success', 'Votre ticket a été créé avec succès !'); 
-                    form.reset(); 
-                    selectedFiles = []; 
-                    syncInputFiles();
-                    renderPreview();
-                } else {
-                    const errorJson = await response.json();
-                    console.error("API Error", errorJson);
-                    showMessage('error', 'Erreur lors de la création du ticket. Vérifiez la console.');
-                }
-            } catch (error) {
-                console.error('Network Error:', error);
-                showMessage('error', 'Erreur réseau. Veuillez réessayer.');
-            } finally {
-                submitButton.disabled = false;
-                submitButton.textContent = 'Envoyer la demande';
+              FreshworksWidget('on', 'widget:loaded', function() {
+                openWidgetSafely();
+                observeAndZoom();
+              });
+            } catch (e) {
+              openWidgetSafely();
+              observeAndZoom();
             }
-        });
+          } else {
+            let waited = 0;
+            const iv = setInterval(() => {
+              if (typeof FreshworksWidget === 'function') {
+                clearInterval(iv);
+                try {
+                  FreshworksWidget('on', 'widget:loaded', function() {
+                    openWidgetSafely();
+                    observeAndZoom();
+                  });
+                } catch (e) {
+                  openWidgetSafely();
+                  observeAndZoom();
+                }
+              }
+              waited += 250;
+              if (waited > 7000) {
+                clearInterval(iv);
+                // Fallback attempts
+                openWidgetSafely();
+                observeAndZoom();
+              }
+            }, 250);
+          }
 
+          // Extra fallback opens in case the event isn't fired
+          [300, 700, 1500, 3000].forEach(t => setTimeout(openWidgetSafely, t));
+        };
+
+        if (document.readyState === 'complete' || document.readyState === 'interactive') {
+          setTimeout(setup, 50);
+        } else {
+          document.addEventListener('DOMContentLoaded', setup);
+        }
       })();
     </script>
+
   </body>
 </html>
-<script>
-	window.fwSettings={
-	'widget_id':205000000615
-	};
-	!function(){if("function"!=typeof window.FreshworksWidget){var n=function(){n.q.push(arguments)};n.q=[],window.FreshworksWidget=n}}() 
-</script>
-<script type='text/javascript' src='https://euc-widget.freshworks.com/widgets/205000000615.js' async defer></script>
